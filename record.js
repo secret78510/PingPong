@@ -1,3 +1,4 @@
+const mp3 = document.querySelector('.mp3');
 
 export default class Record {
     constructor(recordElement, recordListElement) {
@@ -22,6 +23,7 @@ export default class Record {
 
     show() {
         this.record.classList.remove('close');
+        mp3.pause();
     }
     hide() {
         this.record.classList.add('close');
